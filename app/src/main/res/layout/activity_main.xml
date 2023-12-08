@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Primeiro Numero" />
+
+        <EditText
+            android:id="@+id/txtNro1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/app_name"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Segundo Numero" />
+
+        <EditText
+            android:id="@+id/txtNro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/app_name"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btSomar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="somar"
+            android:text="somar" />
+
+        <Button
+            android:id="@+id/btSubtrair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="subtrair"
+            android:text="subtrair" />
+
+        <Button
+            android:id="@+id/btMultiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="multiplicar"
+            android:text="multiplicar" />
+
+        <Button
+            android:id="@+id/btDividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dividir"
+            android:text="dividir" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O resultado é" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="=" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
